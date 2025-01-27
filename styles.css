@@ -1,0 +1,60 @@
+.modalInput{
+    width:100%;
+}
+.modalIconContainer{
+    display:flex;
+}
+.modalIcon1{
+    border:1px solid black;
+    border-radius: 5px;
+    background-color:lightgray;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.modalIcon2{
+    border:1px solid black;
+    background-color:lightgray;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding:2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.arriba{
+    background-color: lightgray;
+    width:70%;
+}
+.rightButtons{
+    position:absolute; right:300px; top:0px;
+}
+.accordion-button::after {
+    background-image: initial;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    background-image: initial;
+  }
+  .abajo{
+    width:70%;
+    justify-content: center;
+    display:flex;
+    height:100%;
+  }
+  .col-4 img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+    margin:4px;
+  }
+  .dateDiv{
+    position:absolute;
+    right:17.5%
+  }
+  .InstaPost{
+    border:1px black solid;
+    border-radius: 5px;
+    margin-top: 5px;
+  }  
