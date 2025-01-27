@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="allEncompassing container-fluid">
+    <div class=" arriba container-fluid">
+      <div class="container align-items-center d-flex">
+        <p><i class="fa-brands fa-instagram ms-auto"></i>Instagram</p>
+        <!--modal-->
+        <div class="d-flex gap-2 rightButtons">
+
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+            Create new post
+          </button>
+          <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="myMoodalLabel">Create new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Caption:</p>
+                  <!--input in a box-->
+                  <input class="modalInput" type="text" placeholder="Add the caption of your post here">
+                  <!--two icons-->
+                  <div class="modalIconContainer">
+                    <div class="modalIcon1">
+                      <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <div class="modalIcon2">
+                      <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--dropdown-->
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="abajo container-fluid"><!--post-->
+      <!--acordion with 2 items-->
+      <div class="accordion d-flex justify-content-center" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <i class="fa-solid fa-table-cells"></i><!--grid icon-->
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!--grid here-->
+              <!--image example    <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" width="460" height="345">-->
+              <div class="col-4 d-flex">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+              </div>
+              <div class="col-4 d-flex">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+              </div>
+              <div class="col-4 d-flex">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+              </div>
+              <div class="col-4 d-flex">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="fa-solid fa-square"></i><!--square icon-->
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!--posts here-->
+              <div class="InstaPost">
+                <div class="PostHeader d-flex">
+                  <h3>Post title</h3>
+                  <div class="dateDiv">05/05/2020</div>
+                </div>
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <h2>200 likes</h2>
+                <p>Image description</p>
+              </div>
+              <div class="InstaPost">
+                <div class="PostHeader d-flex">
+                  <h3>Post title</h3>
+                  <div class="dateDiv">05/05/2020</div>
+                </div>
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <h2>200 likes</h2>
+                <p>Image description</p>
+              </div>
+              <div class="InstaPost">
+                <div class="PostHeader d-flex">
+                  <h3>Post title</h3>
+                  <div class="dateDiv">05/05/2020</div>
+                </div>
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <h2>200 likes</h2>
+                <p>Image description</p>
+              </div>
+
+              <div class="InstaPost">
+                <div class="PostHeader d-flex">
+                  <h3>Post title</h3>
+                  <div class="dateDiv">05/05/2020</div>
+                </div>
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+                <h2>200 likes</h2>
+                <p>Image description</p>
+              </div>
+            </div>
+            <!--<img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!--bootstrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
